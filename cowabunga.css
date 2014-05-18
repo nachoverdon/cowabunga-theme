@@ -4,81 +4,127 @@ Name:       Cowabunga
 Author:     Nacho Verdón (nverblaz@gmail.com)
 Version:	1.0
 Source: 	https://github.com/nachoverdon/cowabunga-theme
-License:	MIT (https://github.com/nachoverdon/cowabunga-theme/blob/master/LICENSE)
+License:	MIT (https://github.com/nachoverdon/cowabunga-theme/raw/master/LICENSE)
 
-Uses 'Droid Sans Mono' font or the default monospace font as a fallback. (http://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans+Mono)
+Uses 'Inconsolata' font or the default monospace font as a fallback. (http://www.google.com/fonts#UsePlace:use/Collection:Inconsolata)
 
 */
 
-.cm-s-cowabunga {font-family: Consolas, 'Droid Sans Mono', monospace !important; font-size: 12px !important;line-height: 1.1em;}
-.cm-s-cowabunga.CodeMirror {background: #151515; color: #eee;}
-.cm-s-cowabunga div.CodeMirror-activeline-background {background-color: #1b1b1b !important;  z-index: 0; outline: none !important;}
-.cm-s-cowabunga div.CodeMirror-selected {background: #333 !important;}
-.cm-s-cowabunga .CodeMirror-gutters {background: #0a0a0a; border-right: 0;}
-.cm-s-cowabunga div.CodeMirror-cursor {border-left: 1px solid #fff !important; z-index: 999 !important;}
-
-.cm-s-cowabunga.CodeMirror, .cm-s-cowabunga div.CodeMirror-activeline-background,
-.cm-s-cowabunga div.CodeMirror-selected, .cm-s-cowabunga .CodeMirror-gutters {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2P8//8/LwMDwy9GIIMdyGADAE+LBxFPPaeGAAAAAElFTkSuQmCC) !important;
+.cm-s-cowabunga {
+  font-family: Consolas, 'Inconsolata', monospace !important;
+  font-size: 13px !important;
+  line-height: 1.2em !important;
 }
-
-.cm-s-cowabunga span.cm-comment {color: #099; text-shadow: 1px 1px 0 #000;}
-
+.cm-s-cowabunga.CodeMirror {
+  background: #111;
+  color: #ddd;
+}
+.cm-s-cowabunga div.CodeMirror-activeline-background {
+  background-color: #1b1b1b !important;
+  z-index: 0 !important;
+  outline: none !important;
+}
+.cm-s-cowabunga div.CodeMirror-selected {
+  background: #333 !important;
+}
+.cm-s-cowabunga .CodeMirror-gutters {
+  background: #0b0b0b;
+  border-right: 0 !important;
+}
+.CodeMirror pre {
+  padding: 0px 8px;
+}
+.cm-s-cowabunga div.CodeMirror-cursor {
+  border-left: 1px solid #fff !important;
+}
+.cm-s-cowabunga.CodeMirror,
+.cm-s-cowabunga .CodeMirror-gutters,
+.cm-s-cowabunga div.CodeMirror-selected,
+.cm-s-cowabunga div.CodeMirror-activeline-background {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2P8//8/LwMDwy9GIIMdyGADAE+LBxFPPaeGAAAAAElFTkSuQmCC);
+}
+.cm-s-cowabunga span.cm-def {
+  color: #e60;
+}
+.cm-s-cowabunga span.cm-tag {
+  color: #d28;
+}
+.cm-s-cowabunga span.cm-comment {
+  color: #099;
+}
+.cm-s-cowabunga span.cm-property {
+  color: #fb0;
+}
+.cm-s-cowabunga span.cm-string-2 {
+  color: #9dd;
+}
+.cm-s-cowabunga span.cm-bracket {
+  font-weight: bold;
+}
+.cm-s-cowabunga span.cm-operator {
+  color: #fff;
+  font-weight: bold;
+}
+.cm-s-cowabunga span.cm-link,
 .cm-s-cowabunga span.cm-atom,
 .cm-s-cowabunga span.cm-number,
-.cm-s-cowabunga span.cm-link {color: #a6c;}
-
-.cm-s-cowabunga .CodeMirror-linenumber,
-.cm-s-cowabunga span.cm-qualifier {color: #ccc;}
-
-.cm-s-cowabunga span.cm-property {color: #fc5;}
-.cm-s-cowabunga span.cm-attribute {color: #c9f;}
-.cm-s-cowabunga span.cm-keyword {color: #f43; font-weight: bold;}
-.cm-s-cowabunga span.cm-string {color: #999;}
-.cm-s-cowabunga span.cm-string-2 {color: #aaa;}
-
-.cm-s-cowabunga span.cm-variable {color: #ac5;}
-.cm-s-cowabunga span.cm-variable-2 {color: #69c;}
-.cm-s-cowabunga span.cm-def {color: #f85;}
-.cm-s-cowabunga span.cm-bracket {color: #6ac;}
-.cm-s-cowabunga span.cm-tag {color: #d44;}
-.cm-s-cowabunga span.cm-error {color: #fff; background-color: rgba(255, 34, 34, 0.1);background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAF0lEQVQIW2P8z8BgzMDA8JwRyJACMiQBJX8DTitXk+IAAAAASUVORK5CYII=) !important;}
-.cm-s-cowabunga span.cm-id {color: #f00;}
-.cm-s-cowabunga span.cm-builtin, .cm-s-cowabunga span.cm-meta {color: #f43;}
-.cm-s-cowabunga span.cm-operator {color: #ddd;}
-.cm-s-cowabunga span.cm-punctuation {color: #8f5;}
-
-@-webkit-keyframes matching { 
-	0% { background-color: rgba(0, 136, 255, 0);}50%{background-color: rgba(0, 136, 255, 1);
-	box-shadow: 0 0 5px #08f,
-		2px 2px 5px #08f,
-		-2px -2px 5px #08f,
-		0 2px 5px #08f,
-		2px 0 5px #08f,
-		0px -2px 5px #08f,
-		-2px 0px 5px #08f,
-		2px -2px 5px #08f,
-		-2px 2px 5px #08f;}}
-
-@-webkit-keyframes nonmatching {
-	0% {background-color: rgba(255, 0, 0, 0);}50%{background-color: #f00;
-	box-shadow: 
-		0 0 5px #f00,
-		2px 2px 5px #f00,
-		-2px -2px 5px #f00,
-		0 2px 5px #f00,
-		2px 0 5px #f00,
-		0px -2px 5px #f00,
-		-2px 0px 5px #f00,
-		2px -2px 5px #f00,
-		-2px 2px 5px #f00;}}
-
-.cm-s-cowabunga span.CodeMirror-matchingbracket {-webkit-animation: matching 2s linear infinite;color: #fff !important;}
-.cm-s-cowabunga  span.CodeMirror-nonmatchingbracket {-webkit-animation: nonmatching 0.5s linear infinite; color: #fff !important;}
-
-.cm-s-cowabunga .CodeMirror-activeline div.CodeMirror-linenumber {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2P8//8/LwMDwy9GIIMdyGADAE+LBxFPPaeGAAAAAElFTkSuQmCC) , linear-gradient(90deg, #444 0%, #1b1b1b 100%) !important;}
-
-/*.cm-s-cowabunga .cm-tab:before {
-	content: "|";
-	color: #888;
-	position:absolute;
-}*/
+.cm-s-cowabunga span.cm-attribute {
+  color: #94c;
+}
+.cm-negative,
+.cm-s-cowabunga span.cm-meta,
+.cm-s-cowabunga span.cm-keyword,
+.cm-s-cowabunga span.cm-qualifier {
+  color: #c00;
+}
+.cm-s-cowabunga .cm-hr,
+.cm-s-cowabunga span.cm-string,
+.cm-s-cowabunga .CodeMirror-linenumber {
+  color: #888;
+}
+.cm-positive,
+.cm-s-cowabunga span.cm-quote,
+.cm-s-cowabunga span.cm-variable,
+.cm-s-cowabunga span.cm-variable-3 {
+  color: #8c2;
+}
+.cm-s-cowabunga .cm-header,
+.cm-s-cowabunga span.cm-builtin,
+.cm-s-cowabunga span.cm-variable-2 {
+  color: #0af;
+}
+.cm-s-cowabunga span.cm-error,
+.cm-s-cowabunga .cm-invalidchar {
+  color: #fff;
+  background-color: rgba(255, 34, 34, 0.1);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAF0lEQVQIW2P8z8BgzMDA8JwRyJACMiQBJX8DTitXk+IAAAAASUVORK5CYII=);
+}
+.cm-em {
+  font-style: italic;
+}
+.cm-link {
+  text-decoration: underline;
+}
+.cm-header,
+.cm-strong {
+  font-weight: bold;
+}
+.CodeMirror .CodeMirror-searching,
+.cm-s-cowabunga span.CodeMirror-matchingbracket {
+  background-color: #8c2 !important;
+  color: #111 !important;
+}
+.cm-s-cowabunga span.CodeMirror-nonmatchingbracket {
+  background-color: #c00 !important;
+  color: #111 !important;
+}
+.cm-s-cowabunga .CodeMirror-matchingtag {
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000, 2px 2px 0 #000 !important;
+  background: transparent !important;
+}
+.cm-s-cowabunga .CodeMirror-activeline div.CodeMirror-linenumber {
+  color: #fff !important;
+  font-weight: bold;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2P8//8/LwMDwy9GIIMdyGADAE+LBxFPPaeGAAAAAElFTkSuQmCC), linear-gradient(0, #111 0%, #111 100%);
+}
