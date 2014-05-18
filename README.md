@@ -1,4 +1,6 @@
-cowabunga-theme
+Cowabunga theme
 ===============
 
-A CodeMirror colorfull theme with a dark background.
+A colorfull theme with a dark background.
+
+At this time it is only available for CodeMirror.
